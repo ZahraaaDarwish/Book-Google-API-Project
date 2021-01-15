@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from 'react';
-import Search from './Compoments/Search';
-import Book from './Compoments/Book';
+import Search from './Components/Search';
+import Book from './Components/Book';
 
 import axios from 'axios';
 
