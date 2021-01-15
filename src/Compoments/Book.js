@@ -2,23 +2,13 @@ import React from 'react';
 import Image from './Image';
 
 function Book(props){
- 
-    console.log(props.books2);
-
+    //console.log(props.books2);
     const booksArray = props.books; 
-    
-  
     return (
-
-      booksArray.map(singlebook => {
-        return <Image data={singlebook}/>;
+        booksArray.map(singlebook => {
+        return <Image data={singlebook} key={singlebook.id}/>;
       })
-   
     );
-
- 
-
 }
 
-
-  export default Book;
+export default Book;

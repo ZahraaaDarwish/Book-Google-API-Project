@@ -1,10 +1,6 @@
-import React, { useState } from 'react';
-
-
+import React from 'react';
 
 function Image (props) {
-
-    
     let singlebook = props.data;
     // console.log('singlebook', singlebook);
 
@@ -15,7 +11,6 @@ function Image (props) {
           <img src={thumbnailPicture} alt={singlebook.title} />
         </a>
       );
-
     }else{
       return (
         <a href={singlebook.volumeInfo.previewLink} key={singlebook.id}>
@@ -23,7 +18,6 @@ function Image (props) {
         </a>
       );
     }
-
 }
 
 export default Image;
