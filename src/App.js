@@ -11,6 +11,7 @@ function App() {
 
   //console.log('app file');
   console.log('now created two accounts on github desktop');
+  console.log('next trial: forked for my own purposes');
 
   const [bookResult, setBookResult] = useState([]);
   const apiKey = "AIzaSyDA1X_brJRtwJTAiNsl3zY567x3E_SzRes";
