@@ -1,0 +1,10 @@
+import styled, { css } from 'styled-components';
+
+const ProfileStyled = styled.div`
+.form-item-select {
+    width: 150px;
+    margin-right: 15px;
+  }
+`;
+
+export default ProfileStyled;

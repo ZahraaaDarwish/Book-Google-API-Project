@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Book Search Application</h1>
+      <h1 style={{color: "red"}}>Book Search Application</h1>
       <Search onSubmit={getResultOnChange}/>
       <Book books={bookResult}/>
     </div>

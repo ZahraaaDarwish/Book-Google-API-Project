@@ -1,13 +1,17 @@
 import React from 'react';
+// import styled, { css } from 'styled-components';
 
-function Search(props) {
+
+function Search(props: any) {
   // console.log('search fiile');
-  function handleSubmit (event) {
+  function handleSubmit (event: any) {
     event.preventDefault();
     const bookInput = event.target[0].value;
     // console.log('bookInput :: ', bookInput);
     props.onSubmit(bookInput);
   }
+
+
 
   return (
         <form onSubmit={handleSubmit}>

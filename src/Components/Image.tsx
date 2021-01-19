@@ -1,6 +1,9 @@
 import React from 'react';
 
-function Image (props) {
+function Image (props: any) {
+
+  
+
     let singlebook = props.data;
     // console.log('singlebook', singlebook);
 
@@ -8,7 +11,7 @@ function Image (props) {
     if(thumbnailPicture){
       return (
         <a href={singlebook.volumeInfo.previewLink} key={singlebook.id}>
-          <img src={thumbnailPicture} alt={singlebook.title} />
+          <img className="mystyle" src={thumbnailPicture} alt={singlebook.title} />
         </a>
       );
     }else{
