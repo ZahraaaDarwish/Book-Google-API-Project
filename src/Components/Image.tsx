@@ -1,8 +1,7 @@
 import React from 'react';
+import ProfileStyled from "../css/Image.style";
 
 function Image (props: any) {
-
-  
 
     let singlebook = props.data;
     // console.log('singlebook', singlebook);
@@ -10,15 +9,19 @@ function Image (props: any) {
     let thumbnailPicture = singlebook.volumeInfo.imageLinks ? singlebook.volumeInfo.imageLinks.thumbnail : '';
     if(thumbnailPicture){
       return (
-        <a href={singlebook.volumeInfo.previewLink} key={singlebook.id}>
-          <img className="mystyle" src={thumbnailPicture} alt={singlebook.title} />
-        </a>
+        <ProfileStyled>
+          <a href={singlebook.volumeInfo.previewLink} key={singlebook.id}>
+            <img className="mystyle" src={thumbnailPicture} alt={singlebook.title} />
+          </a>
+        </ProfileStyled>
       );
     }else{
       return (
-        <a href={singlebook.volumeInfo.previewLink} key={singlebook.id}>
-          <img src={thumbnailPicture} alt={singlebook.title} />
-        </a>
+        <ProfileStyled>
+          <a href={singlebook.volumeInfo.previewLink} key={singlebook.id}>
+            <img className="mystyle" src={thumbnailPicture} alt={singlebook.title} />
+          </a>
+        </ProfileStyled>
       );
     }
 }

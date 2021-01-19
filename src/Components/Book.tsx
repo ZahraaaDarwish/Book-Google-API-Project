@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from './Image';
-// import styled, { css } from 'styled-components';
 
 function Book(props: any){
 
