@@ -1,7 +1,3 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
-
-
 function Search(props: any) {
   // console.log('search fiile');
   function handleSubmit (event: any) {

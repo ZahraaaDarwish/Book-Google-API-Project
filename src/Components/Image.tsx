@@ -17,11 +17,9 @@ function Image (props: any) {
       );
     }else{
       return (
-        <ProfileStyled>
           <a href={singlebook.volumeInfo.previewLink} key={singlebook.id}>
             <img className="mystyle" src={thumbnailPicture} alt={singlebook.title} />
           </a>
-        </ProfileStyled>
       );
     }
 }
