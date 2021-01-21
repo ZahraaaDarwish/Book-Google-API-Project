@@ -10,8 +10,8 @@ import axios from 'axios';
 function App() {
 
   //console.log('app file');
-  console.log('now created two accounts on github desktop');
-  console.log('next trial: forked for my own purposes');
+  // console.log('now created two accounts on github desktop');
+  // console.log('next trial: forked for my own purposes');
 
   const [bookResult, setBookResult] = useState([]);
   const apiKey = "AIzaSyDA1X_brJRtwJTAiNsl3zY567x3E_SzRes";
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 style={{color: "red"}}>Book Search Application</h1>
+      <h1 style={{color: "#26385a", margin: "0.2em"}}>Book Search Application</h1>
       <Search onSubmit={getResultOnChange}/>
       <Book books={bookResult}/>
     </div>

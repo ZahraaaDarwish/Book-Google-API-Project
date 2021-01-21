@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileStyled from "../css/Image.style";
+import ImageStyled from "../css/Image.style";
 
 function Image (props: any) {
 
@@ -9,11 +9,11 @@ function Image (props: any) {
     let thumbnailPicture = singlebook.volumeInfo.imageLinks ? singlebook.volumeInfo.imageLinks.thumbnail : '';
     if(thumbnailPicture){
       return (
-        <ProfileStyled>
+        <ImageStyled>
           <a href={singlebook.volumeInfo.previewLink} key={singlebook.id}>
             <img className="mystyle" src={thumbnailPicture} alt={singlebook.title} />
           </a>
-        </ProfileStyled>
+        </ImageStyled>
       );
     }else{
       return (

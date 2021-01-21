@@ -5,7 +5,7 @@ const ImageStyled = styled.div`
 
   .mystyle{
     border-radius: 4px;
-    border: 4px solid grey;
+    border: 2px solid grey;
     padding: 4px;
     margin: 4px;
     margin-top: 20px;

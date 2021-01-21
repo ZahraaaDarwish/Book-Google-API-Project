@@ -1,3 +1,7 @@
+import React from 'react';
+import SearchStyled from "../css/Search.style";
+
+
 function Search(props: any) {
   // console.log('search fiile');
   function handleSubmit (event: any) {
@@ -10,12 +14,14 @@ function Search(props: any) {
 
 
   return (
+    <SearchStyled>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <input type="text" className="form-control mt-10" placeholder="Search for Books" autoComplete="off"/>
+            <input type="text" className="form-control mt-10 input-search-books" placeholder="Search for Books" autoComplete="off"/>
           </div>
-          <button type="submit" className="btn btn-danger">Search</button>
+          <button type="submit" className="btn btn-danger btn-search-books">Search</button>
         </form>
+    </SearchStyled>
   );
 
 };
